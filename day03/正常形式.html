@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 500px;
+            height: 50px;
+        }        
+        .before{
+            position: absolute;
+            top: -10px;
+            height: 60px;
+            width: 500px;
+            background-color: rgb(230, 230, 230);
+            border: 2px dotted rgb(200, 200, 200);
+            border-radius: 5px; 
+        }
+        .after{
+            content: "Broken Image Of"attr(alt);
+            position:absolute;
+            display: block;
+            font-size: 16px;
+            top: 10px;
+            text-align: center;
+            height: 60px;
+            width: 500px;
+            color:rgb(100,100,100)
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div style="position: relative;width: 500px;height: 50px;margin-top: 100px;">
+    <!-- <div> -->
+        <div class='before'></div>
+        <img src="../day03/1.png" alt="测试图片">
+        <div class="after">Broken Image Of 测试图片</div>
+    </div>
+
+</body>
+</html>
