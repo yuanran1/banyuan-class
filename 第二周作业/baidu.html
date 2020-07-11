@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baidu</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            float: left;
+            margin: 10px 0 5px 0;
+        }
+        .menu-left{
+            padding: 0px 10px;
+            color:black;
+            list-style: none;
+            float: left;
+            margin-right: 10px;
+        }
+        .header-right{
+            float: right;
+            margin: 10px 0 5px 0;
+        }
+        .menu-right{
+            padding:0 10px;
+            color: black;
+            list-style: none;
+            margin-right: 30px;
+            float: right;;
+        }
+
+
+        a:hover{
+            color: blue;
+        }
+        .center{
+            width: 100%;
+            top: 74px;
+            bottom: 50px;
+            /* background-color: pink; */
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: 
+            translate(-50%,-50%);
+        }
+        .log{
+            text-align: center;
+            /* margin-top:-80px; */
+        }
+        .search{
+            width: 100%;
+            margin: 20px auto;
+            float: left;
+        }
+        .text{
+            width: 600px;
+            height: 34px;
+            display: block;
+            float: left;
+            border-radius: 5px 0 0 5px;
+            border: 2px solid blue;
+        }
+        .button{
+            height: 38px;
+            width: 100px;
+            display:block;
+            float: left;
+            border-radius: 0 5px 5px 0;
+            border:none;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+        .footer{
+            text-align:left;
+            width: 100%;
+            height: 50px;
+            bottom:0;
+            font-size: 6px;
+            position: fixed;
+            background-color: rgb(245, 239, 239);
+        }
+        .base-left{
+            padding: 0px 20px;
+            list-style: none;
+            float: left;
+            margin-left: 3px;
+        }
+        .base-right{
+            padding: 0px 8px;
+            list-style: none;
+            float: right;
+            margin-right: 5px;
+        }
+        .login{
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            border: none;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <ul>
+                <li class="menu-left"><a href="http://news.baidu.com/">新闻</li>
+                <li class="menu-left"><a href="https://www.hao123.com/">hao123</li>
+                <li class="menu-left"><a href="https://map.baidu.com/@13241366,3754880,13z">地图</li>
+                <li class="menu-left"><a href="https://haokan.baidu.com/?sfrom=baidu-top">视频</li>
+                <li class="menu-left"><a href="https://tieba.baidu.com/index.html">贴吧</li>
+                <li class="menu-left"><a href="https://xueshu.baidu.com/">学术</li>
+                <li class="menu-left"><a href="https://www.baidu.com/more/">更多</li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <ul>
+                <input type="button" value="登陆" class="login">
+                <li class="menu-right"><a href="baidu.html">设置</li>
+                <li class="menu-right"><a href="https://www.baidu.com/s?wd=%E9%AB%98%E8%80%83&sa=searchpromo_gk_pc_ysj">高考加油</li>
+            </ul>
+        </div>
+    </header>
+    <div class="center">
+        <div class="log">
+            <img src="baidu.png" alt="百度log"
+            style="width: 400px;height: 200px;">
+        </div>
+        <div class="search">
+            <div style="width: 750px;margin: 0 auto;">
+                <form action="baidu.com" method="GET" name="search">
+                    <input type="text" class="text">
+                    <input type="submit" class="button" value="百度一下">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li class="base-left"><a href="https://www.baidu.com/cache/sethelp/index.html">设为首页</li>
+                <li class="base-left"><a href="https://home.baidu.com/">关于百度</li>
+                <li class="base-left"><a href="http://ir.baidu.com/">About Baidu</li>
+                <li class="base-left"><a href="https://isite.baidu.com/site/e.baidu.com/d38e8023-2131-4904-adf7-a8d1108f51ef?refer=888">百度营销</li>
+                <li class="base-left"><a href="https://www.baidu.com/duty/">使用百度前必读</li>
+                <li class="base-left"><a href="#">意见反馈</li>
+                <li class="base-left"><a href="https://help.baidu.com/">帮助中心</li>
+                <li class="base-right">京ICP证030173号</li>
+                <li class="base-right">京公网安备11000002000001号</li>
+                <li class="base-right">(京)-经营性-2017-0020</li>
+                <li class="base-right">©2020 Baidu</li>     
+            </ul>
+    </footer>
+</body>
+</html>
