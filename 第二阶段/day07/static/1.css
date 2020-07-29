@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.container{
+    position: relative;
+}
+
+.banner{
+    position: absolute;
+}
+.banner_li{
+    float: left;
+}
+.banner_img{
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+}
+
+
+
+/* 底部小圆点 */
+.button_container{
+    position: absolute;
+}
+.button_container_circle{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.on{
+    background-color: aqua;
+}
+/* 左右按钮 */
+.arrow{
+    position: absolute;/*设置定位*/
+    text-align: center;
+    background: RGBA(0,0,0,.3);  /*背景透明度*/
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    background-color: RGBA(0,0,0,.3);/*背景透明度*/
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    color: seashell;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 向左 */
+.prev{
+    left: 20px;
+}
+/* 向右 */
+.next{
+    right: 20px;
+}
