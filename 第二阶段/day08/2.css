@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: brown;
+    padding: 30px 40px;
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+.header:after{
+    content: "";
+    clear: both;
+}
+input{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    font-size: 16px;
+    padding: 10px;
+    float: left;
+}
+
+.task-item{
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background-color: pink;
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.add-btn{
+    padding: 8px;
+    width: 25%;
+    background: rgb(111, 113, 117);
+    color: rgb(73, 71, 71);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.addBtn:hover{
+    background-color: silver;
+}
+
+ul li:nth-child(odd){
+    background-color: mistyrose;
+
+}
+
+
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    border-color: ivory;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+} 
+
+
+ul li:hover{
+    background-color: palegoldenrod;
+}
+/* 点击任务后 */
+ul li.checked{
+    background-color: rgb(124, 172, 235);
+    color: mistyrose;
+    text-decoration: line-through;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    background-color: darkred;
+    color: ghostwhite;
+}
+
