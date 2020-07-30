@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre class="content"></pre>
+    <script>
+
+        var contentEle=document.getElementsByClassName('content')[0];
+        var string='We are banyuan collage of IT education.';
+        var count=0;
+        var timer;
+        // 添加内容
+        function addContent(){
+            if(count>string.length){
+                //stop();
+                count=0;
+            }
+            count++;
+            contentEle.innerHTML=string.substring(0,count);//每次加一个，substring截取字符串的一部分
+        }
+        // 定时器开始
+        function start(){
+            timer=setInterval(addContent,80);//每隔80ms执行一次
+        }
+        // 停止
+        function stop(){
+            if(timer){
+                clearInterval(timer);//清空计时器
+            }
+        }
+        start();
+    </script>
+</body>
+</html>
