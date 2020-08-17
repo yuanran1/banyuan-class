@@ -1,0 +1,25 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div>{{title|join('*')|capitalize}}</div>
+{# <p>{{title}}</p> #}
+<div>{{content}}</div>
+{# {%include 'a.njk'%} #}
+{%if flag%}
+<div>flag is true</div>
+{%else%}
+<div>flag is false</div>
+{%endif%}
+
+{%if gender===0%}
+<div>女</div>
+{%else%}
+<div>男</div>
+{%endif%}
+
+{%for item in news%}
+<div> {{item.name}}</div>
+<div>{{item.id}}</div>
+{%endfor%}
+
+{% endblock %}
+

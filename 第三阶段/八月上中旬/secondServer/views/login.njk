@@ -1,0 +1,60 @@
+{%extends 'layout.njk'%}
+{%block content%}
+<div>
+    <span>name</span>
+    <input class="username"/>
+</div>
+
+<div>
+    <span>密码</span>
+    <input class="password"/>
+</div>
+
+<div>
+    <button class="login-btn">登陆</button>
+</div>
+
+<input class="input1"/>
+<input class="input2"/>
+{%endblock%}
+{%block jquery%}
+ <script src='/js/jquery.js'></script>
+ <script src='/js/jquery.cookie.js'></script>
+{%endblock%}
+{%block script%}
+<script src='/js/login.js'></script>
+<script>
+    let input1=document.getElementsByClassName('input1')[0];
+    let input2=document.getElementsByClassName('input2')[0];
+     
+    init()
+    let input={
+        input1:'',
+        input2:''
+    }
+    //若有则返回，没有就新建
+    //let input=JSON.parse($.cookie('input'))||{};
+
+    input1.onblur=function(){
+        input.input1=input1.value;
+        console.log(input);
+        $.cookie('input',JSON.stringify(input));
+    }
+
+    input2.onblur=function(){
+        input.input2=input2.value;
+        console.log(input);
+        $.cookie('input',JSON.stringify(input));
+    }
+    function init(){
+        let data=$.cookie('input')?JSON.parse($.cookie('input')):{}
+        console.log(data);
+        if(data){
+            input1.value=data.input1||'';
+            input2.value=data.input2||'';
+        }
+    }
+
+   
+</script>
+{%endblock%}
